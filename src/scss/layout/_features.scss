@@ -61,8 +61,9 @@
     margin: 0 auto;
 	width: 88px;
 	height: 88px;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 
+	/*
 	&::before {
 		content: '';
 		display: block;
@@ -75,6 +76,7 @@
 		border-radius: 50%;
 		box-shadow: 12px 24px 32px rgba(color(typography,1), .12);
 	}
+	*/
 
 	svg {
 		position: relative; /* To display the svg icon above the background color */
