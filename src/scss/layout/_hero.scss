@@ -82,11 +82,11 @@
 	}
 
 	.hero-main-shape {
-
-		svg {
-			width: auto;
-			height: 647px;
-		}
+		width:460px;
+		max-width:100%;
+		margin-top:64px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
