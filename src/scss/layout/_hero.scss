@@ -45,7 +45,7 @@
 
     .hero {
 		text-align: left;
-        padding-top: 160px;
+        padding-top: 60px;
     }
 
 	.hero-inner {
@@ -54,7 +54,8 @@
 	}
 
 	.hero-copy {
-		padding-right: 48px;
+		margin: 0 auto;
+    	text-align: center;
 		min-width: 512px;
 	}
 
@@ -93,7 +94,6 @@
 @include media( '>large' ) {
 
     .hero-copy {
-        padding-right: 92px;
         min-width: 620px;
     }
 }
