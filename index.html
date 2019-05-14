@@ -19,64 +19,65 @@
 </head>
 
 <body class="is-boxed has-animations">
-	<div class="body-wrap boxed-container">
-		<header class="site-header">
-			<div class="header-shape header-shape-1">
-				<svg width="337" height="222" viewBox="0 0 337 222" xmlns="http://www.w3.org/2000/svg">
-					<defs>
-						<linearGradient x1="50%" y1="55.434%" x2="50%" y2="0%" id="header-shape-1">
-							<stop stop-color="#E0E1FE" stop-opacity="0" offset="0%" />
-							<stop stop-color="#E0E1FE" offset="100%" />
-						</linearGradient>
-					</defs>
-					<path d="M1103.21 0H1440v400h-400c145.927-118.557 166.997-251.89 63.21-400z"
-						transform="translate(-1103)" fill="url(#header-shape-1)" fill-rule="evenodd" />
-				</svg>
-			</div>
-			<div class="header-shape header-shape-2">
-				<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"
-					style="overflow:visible">
-					<defs>
-						<linearGradient x1="93.05%" y1="19.767%" x2="15.034%" y2="85.765%" id="header-shape-2">
-							<stop stop-color="#FF3058" offset="0%" />
-							<stop stop-color="#FF6381" offset="100%" />
-						</linearGradient>
-					</defs>
-					<circle class="anime-element fadeup-animation" cx="64" cy="64" r="64" fill="url(#header-shape-2)"
-						fill-rule="evenodd" />
-				</svg>
-			</div>
-			<div class="container">
-				<div class="site-header-inner">
-					<div class="brand header-brand">
-						<h1 class="m-0">
-							<a href="#">
-
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-									width="99px" height="99px" viewBox="0 0 99 99" version="1.1">
-									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-										<g>
-											<circle fill="#15B5DD" cx="49.5" cy="49.5" r="49.5" />
-											<rect fill="rgb(242,250,252)" x="44.7096774" y="55.8870968"
-												width="22.3548387" height="22.3548387" rx="2.56" />
-											<rect fill="rgb(242,250,252)"
-												transform="translate(69.943745, 44.395358) rotate(-53.000000) translate(-69.943745, -44.395358) "
-												x="58.7663261" y="33.217939" width="22.3548387" height="22.3548387"
-												rx="2.56" />
-											<rect fill="rgb(242,250,252)"
-												transform="translate(29.404564, 66.130370) rotate(27.000000) translate(-29.404564, -66.130370) "
-												x="18.2271442" y="54.9529506" width="22.3548387" height="22.3548387"
-												rx="2.56" />
-										</g>
-									</g>
-								</svg>
-							</a>
-						</h1>
-					</div>
+	<header class="site-header" id="site-header">
+		<div class="container">
+			<div class="top-header">
+				<div class="logo-site">
+					<a href="/">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99px"
+							height="99px" viewBox="0 0 99 99" version="1.1">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g>
+									<circle fill="#15B5DD" cx="49.5" cy="49.5" r="49.5" />
+									<rect fill="rgb(242,250,252)" x="44.7096774" y="55.8870968" width="22.3548387" height="22.3548387"
+										rx="2.56" />
+									<rect fill="rgb(242,250,252)"
+										transform="translate(69.943745, 44.395358) rotate(-53.000000) translate(-69.943745, -44.395358) "
+										x="58.7663261" y="33.217939" width="22.3548387" height="22.3548387" rx="2.56" />
+									<rect fill="rgb(242,250,252)"
+										transform="translate(29.404564, 66.130370) rotate(27.000000) translate(-29.404564, -66.130370) "
+										x="18.2271442" y="54.9529506" width="22.3548387" height="22.3548387" rx="2.56" />
+								</g>
+							</g>
+						</svg>
+					</a>
 				</div>
+				<div class="nav-mobile hidden-md">
+					<div class="logo-mobile">
+						<a href="/">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99px"
+								height="99px" viewBox="0 0 99 99" version="1.1">
+								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g>
+										<circle fill="#15B5DD" cx="49.5" cy="49.5" r="49.5" />
+										<rect fill="rgb(242,250,252)" x="44.7096774" y="55.8870968" width="22.3548387" height="22.3548387"
+											rx="2.56" />
+										<rect fill="rgb(242,250,252)"
+											transform="translate(69.943745, 44.395358) rotate(-53.000000) translate(-69.943745, -44.395358) "
+											x="58.7663261" y="33.217939" width="22.3548387" height="22.3548387" rx="2.56" />
+										<rect fill="rgb(242,250,252)"
+											transform="translate(29.404564, 66.130370) rotate(27.000000) translate(-29.404564, -66.130370) "
+											x="18.2271442" y="54.9529506" width="22.3548387" height="22.3548387" rx="2.56" />
+									</g>
+								</g>
+							</svg>
+						</a>
+					</div>
+					<div class="btn-expand hidden-md"><img src="./src/images/bar-button.png" alt=""></div>
+				</div>
+				<nav class="navbar">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a target="blank" href="https://kitchensink.icetea.io/">Kitchen Sink</a></li>
+						<li><a target="blank" href="https://studio.icetea.io/">Icetea Studio</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#about">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
-		</header>
-
+		</div>
+	</header>
+	<div class="body-wrap boxed-container">
 		<main>
 			<section class="hero">
 				<div class="container">
@@ -85,12 +86,20 @@
 							<h1 class="hero-title mt-0">Icetea Blockchain</h1>
 							<p class="hero-paragraph">Build powerful & secure apps with UX so smooth that most users are
 								not aware that it's decentralized.</p>
-							<form class="hero-form field field-grouped"
+							<div class="video-intro">
+								<div class="videoWrapper">
+									<iframe width="560" height="315"
+										src="https://www.youtube.com/embed/KB6xKsy17BM?autoplay=1&cc_load_policy=1" frameborder="0"
+										allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+								</div>
+							</div>
+							<!-- <form class="hero-form field field-grouped"
 								action="https://tech.us20.list-manage.com/subscribe/post?u=91350701797519f3e0f11de5b&amp;id=8de73fafb9"
 								method="post">
 								<div class="control control-expanded">
-									<input class="input" type="email" name="EMAIL" id="mce-EMAIL"
-										placeholder="Your email&hellip;" required>
+									<input class="input" type="email" name="EMAIL" id="mce-EMAIL" placeholder="Your email&hellip;"
+										required>
 								</div>
 								<div class="control">
 									<input value="Early access" type="submit" id="mc-embedded-subscribe"
@@ -105,13 +114,13 @@
 								<a href="https://kitchensink.icetea.io/" target="_blank">&raquo; Kitchen Sink</a>
 								<br>
 								<a href="https://studio.icetea.io/" target="_blank">&raquo; Icetea Studio</a>
-							</p>
+							</p> -->
 						</div>
-						<div class="hero-illustration">
+						<!-- <div class="hero-illustration">
 							<div class="hero-main-shape">
 								<img src="dist/images/banner.png">
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</section>
@@ -130,8 +139,7 @@
 							<div class="feature text-center is-revealing">
 								<div class="feature-inner">
 									<div class="feature-icon">
-										<svg width="88" height="88" version="1.1" viewBox="0 0 320 320"
-											xmlns="http://www.w3.org/2000/svg">
+										<svg width="88" height="88" version="1.1" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
 											<g fill="none" fill-rule="evenodd">
 												<g transform="translate(14)" fill="#FA6381" fill-rule="nonzero">
 													<path
@@ -157,15 +165,13 @@
 							<div class="feature text-center is-revealing">
 								<div class="feature-inner">
 									<div class="feature-icon">
-										<svg width="88" height="88" version="1.1" viewBox="0 0 320 320"
-											xmlns="http://www.w3.org/2000/svg">
+										<svg width="88" height="88" version="1.1" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
 											<g fill="none" fill-rule="evenodd">
 												<g transform="translate(0 35)">
 													<path
 														d="m221.14 110.4c0.81163-0.80912 1.9175-1.3058 3.1478-1.3064 1.2303 6.29e-4 2.3368 0.49729 3.1484 1.3064 0.80912 0.81163 1.3058 1.9187 1.3064 3.1491-6.29e-4 1.2303-0.49729 2.3368-1.307 3.1484-0.811 0.80912-1.9175 1.3058-3.1478 1.3064-1.2303-6.29e-4 -2.3368-0.49729-3.1478-1.3064-0.80974-0.81163-1.3064-1.9181-1.307-3.1484 6.29e-4 -1.2303 0.49729-2.3374 1.307-3.1491m3.1478-13.901c-9.4045 0.0025147-17.047 7.6448-17.049 17.05 0.002515 9.4045 7.6448 17.046 17.049 17.049 9.4051-0.002515 17.047-7.6442 17.049-17.049v-6.28e-4c-0.002515-9.4045-7.6454-17.047-17.049-17.049"
 														fill="#FA8463" />
-													<polygon points="69.174 137.89 69.174 137.89 69.175 137.89"
-														fill="#FA8463"></polygon>
+													<polygon points="69.174 137.89 69.174 137.89 69.175 137.89" fill="#FA8463"></polygon>
 													<g transform="translate(0 .26656)">
 														<path
 															d="m175.68 218.82v-22.68h5.2715 5.1351 7.8089l-3.0246 22.681h-8.6777v-6.29e-4h-6.5132zm-81.539-171.42h48.909v20.964c-3.3767 1.5818-6.2604 4.0387-8.3407 7.0941-2.2381 3.2861-3.5533 7.26-3.5621 11.524v3.564c-3.4653 1.9942-7.465 3.1472-11.744 3.1478h-1.6145c-6.5226-6.287e-4 -12.427-2.6499-16.714-6.9344-4.2851-4.287-6.9338-10.192-6.9344-16.714v-22.646zm31.884 63.672c-2.4148 1.8263-5.4092 2.9083-8.6633 2.9089-3.2534-6.29e-4 -6.2479-1.0826-8.662-2.9089-1.9609-1.4837-3.5213-3.464-4.5171-5.7411h26.358c-0.99584 2.2771-2.5556 4.2574-4.5158 5.7411zm84.491 49.176c0.2565-1.9558 1.959-3.4458 3.9318-3.442h22.112c1.9722-0.003772 3.6753 1.4862 3.9318 3.4414l7.8095 58.569h-45.595l7.8095-58.568zm97.613 15.273c-6.29e-4 2.4506-0.99395 4.6648-2.6046 6.2774-1.6132 1.6113-3.8268 2.6046-6.2774 2.6053h-43.698l-3.4282-25.706c-1.0398-7.7737-7.7171-13.62-15.561-13.624h-22.112c-7.8435 0.003772-14.521 5.8499-15.561 13.624l-3.4276 25.706h-43.699c-2.4506-6.28e-4 -4.6642-0.99395-6.2774-2.6053-1.6107-1.6126-2.604-3.8268-2.6046-6.2774v-88.492c6.29e-4 -2.4506 0.99332-4.6642 2.6046-6.2774 1.6132-1.6113 3.8268-2.604 6.2774-2.6046h147.49c2.4506 6.287e-4 4.6642 0.99332 6.2774 2.6046 1.6113 1.6132 2.604 3.8268 2.6046 6.2774v88.492zm-293.45-136.99c1.0229-0.61485 2.1388-0.92102 3.278-0.92165 0.60354 0 1.2152 0.086758 1.8226 0.26468 1.7509 0.51866 3.1239 1.6723 3.9368 3.3081l4.2279 8.5627c8.7092 17.636 20.269 33.546 34.353 47.276 5.4463 5.3136 12.656 8.2559 20.263 8.2691l9.4717 0.01886c1.2699 5.6192 4.3612 10.553 8.618 14.142 4.5139 3.8067 10.352 6.107 16.708 6.1064 5.064 6.29e-4 9.7911-1.4711 13.785-3.9921v25.074 9.3196 19.558c0.002515 11.371 9.2442 20.612 20.615 20.615h12.337v22.682l-7.4405-6.29e-4v6.29e-4h-42.041v-0.001257h-44.105v-77.493c0-1.3517-0.47214-2.6618-1.3378-3.7004l-14.453-17.406c-18.37-22.123-32.748-47.009-42.739-73.973-0.27033-0.72864-0.39921-1.4774-0.39921-2.218 0-2.1947 1.1329-4.3071 3.1013-5.4897zm79.456-10.304h0.001886v-1.2574c6.287e-4 -4.1474 1.6836-7.8982 4.4083-10.625 2.7266-2.7247 6.478-4.4077 10.625-4.4083h44.486v7.4883c-6.29e-4 4.5215-1.8358 8.6123-4.8069 11.585-2.9724 2.9705-7.0633 4.8063-11.585 4.8069h-43.13v-7.5888zm112.52 21.518 4.2285-8.5627c0.80974-1.6308 2.1778-2.7819 3.9217-3.3031l0.074813-0.017603 0.021376-0.0050295 0.021375-0.0062868c0.57273-0.1578 1.1467-0.2345 1.7144-0.2345 0.97194 6.287e-4 1.9269 0.22444 2.824 0.67143l6.29e-4 6.286e-4c0.1798 0.089902 0.3332 0.16786 0.45768 0.2433 0.20935 0.12574 0.41745 0.27473 0.63308 0.44259 1.5717 1.2247 2.4626 3.1038 2.4619 5.0458 0 0.68401-0.11002 1.3749-0.33949 2.0514l6.29e-4 -0.0012574c-0.022633 0.066012-0.035835 0.11379-0.044636 0.14083l-0.008173 0.026405v6.287e-4l-6.29e-4 0.0012573c-2.4978 6.7414-5.2696 13.353-8.3099 19.822-0.05281 0.11316-0.11191 0.23387-0.16723 0.34829h-16.91c3.4332-5.3608 6.5817-10.918 9.4196-16.664l-1.1272-0.55701 1.1279 0.55639zm-171.94 188.73h273.41v-7.9308h-273.41v7.9308zm285.14-62.959v-88.492c-0.002515-11.37-9.2448-20.613-20.615-20.615h-72.372c2.372-5.2979 4.5881-10.676 6.615-16.146 0.56267-1.5176 0.90719-3.0717 1.0474-4.6246 0.046523-0.51741 0.071042-1.0348 0.072299-1.5503v-0.059725c6.29e-4 -6.1642-3.1811-12.093-8.7142-15.423l-6.28e-4 -6.287e-4c-2.8228-1.6956-6.0398-2.5663-9.2781-2.5663-1.0788 0-2.1589 0.096189-3.2289 0.29171-0.61171 0.11128-1.219 0.25525-1.8207 0.43191-1.5044 0.44134-2.9316 1.075-4.2505 1.8747-0.52809 0.32063-1.0386 0.66703-1.5296 1.0386-1.2278 0.92919-2.3356 2.0137-3.2924 3.2283-0.38287 0.48597-0.74122 0.99269-1.0732 1.5183-0.33257 0.52558-0.63811 1.0706-0.91599 1.6327l-4.2285 8.5614c-3.7671 7.6303-8.1245 14.9-13.008 21.794h-5.2677-9.2178-2.4148-9.3353-2.4009v-24.805c0-0.093045-0.009431-0.18106-0.013831-0.27159 6.4604-5.1231 10.622-13.039 10.622-21.909v-13.278c-6.28e-4 -3.1994-2.5933-5.7895-5.7902-5.7908h-50.277c-14.679 0.0025147-26.612 11.936-26.614 26.615v43.071c-6.287e-4 9.1153 3.4911 17.428 9.1907 23.686l-9.1618-0.01886c-4.5913-0.0094303-8.9128-1.7735-12.203-4.9785-13.142-12.813-23.925-27.652-32.052-44.112l-4.2285-8.5633c-2.223-4.4976-6.2491-7.8793-11.062-9.2926-1.6528-0.48472-3.354-0.72361-5.049-0.72361-3.239 0-6.4566 0.87136-9.2794 2.5688-5.533 3.3289-8.7148 9.2574-8.7142 15.422-6.2868e-4 2.0822 0.36275 4.1921 1.1197 6.2347 10.447 28.193 25.486 54.218 44.691 77.348l13.12 15.798v75.402h-16.715l6.287e-4 6.28e-4h-8.4439c-5.9492 0.002515-10.78 4.8327-10.783 10.783v9.832c0.0025147 5.9492 4.8333 10.781 10.783 10.783h275.31c5.9492-0.001887 10.781-4.8333 10.783-10.783v-9.832c-0.001886-5.9499-4.8333-10.78-10.783-10.783h-48.942l-3.0246-22.681h42.134c11.37-0.002515 20.612-9.2435 20.615-20.615z"
@@ -191,8 +197,7 @@
 							<div class="feature text-center is-revealing">
 								<div class="feature-inner">
 									<div class="feature-icon">
-										<svg width="88" height="88" version="1.1" viewBox="0 0 320 320"
-											xmlns="http://www.w3.org/2000/svg">
+										<svg width="88" height="88" version="1.1" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
 											<g fill="none" fill-rule="evenodd">
 												<g fill="#4950F6" fill-rule="nonzero">
 													<path
@@ -212,8 +217,7 @@
 							<div class="feature text-center is-revealing">
 								<div class="feature-inner">
 									<div class="feature-icon">
-										<svg width="88" height="88" version="1.1" viewBox="0 0 320 320"
-											xmlns="http://www.w3.org/2000/svg">
+										<svg width="88" height="88" version="1.1" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
 											<g fill="none" fill-rule="evenodd">
 												<g transform="translate(0 13)" fill="#38DAB6" fill-rule="nonzero">
 													<g transform="translate(45.827 27.674)">
@@ -226,8 +230,7 @@
 														<path
 															d="m150.55 150.86h-72.312c-3.4908 0-6.321 2.8302-6.321 6.321 0 3.4908 2.8302 6.321 6.321 6.321h72.312c3.4908 0 6.321-2.8302 6.321-6.321 0-3.4908-2.8302-6.321-6.321-6.321z" />
 													</g>
-													<g
-														transform="translate(160 146.73) scale(-1 1) translate(-160 -146.73)">
+													<g transform="translate(160 146.73) scale(-1 1) translate(-160 -146.73)">
 														<path
 															d="m296.74 0.062922h-274.25c-12.402 0-22.492 10.087-22.492 22.486v205.94c0 12.4 10.09 22.487 22.493 22.487h13.149v35.948c0 2.5931 1.563 4.9304 3.9586 5.9227 0.79333 0.32844 1.626 0.48782 2.4522 0.48782 1.6691 0 3.3096-0.6515 4.5359-1.8775l60.05-40.482h190.1c12.402 0 22.492-10.087 22.492-22.487v-205.94c0.001077-12.399-10.089-22.486-22.491-22.486zm0 238.09h-192.76c-1.6588 0-3.1658 0.63535-4.3038 1.6686-0.073606 0.067483-17.143 10.609-51.209 31.624v-26.882c-0.33446-3.8562-3.0753-6.4106-6.4161-6.4106h-19.559c-5.3309 0-9.6676-4.336-9.6676-9.6654v-205.94c0-5.3294 4.3367-9.6648 9.6676-9.6648h274.25c5.3314 0 9.6676 4.3354 9.6676 9.6648v205.94c0 5.3288-4.3367 9.6648-9.667 9.6648z" />
 													</g>
@@ -350,9 +353,10 @@
 										<div class="accordion-icon"></div>
 									</div>
 									<div class="accordion-body">
-										<p>Icetea is built on <a href="https://tendermint.com/"
-												target="_blank">Tendermint Core</a>, the p2p gossip and consensus engine
-											which also powers Cosmos Network and Binance Chain. These are 2 of top 20 by marketcap, according to <a target="_blank" href='https://www.coingecko.com'>CoinGekko</a>.</p>
+										<p>Icetea is built on <a href="https://tendermint.com/" target="_blank">Tendermint Core</a>, the p2p
+											gossip and consensus engine
+											which also powers Cosmos Network and Binance Chain. These are 2 of top 20 by marketcap, according
+											to <a target="_blank" href='https://www.coingecko.com'>CoinGekko</a>.</p>
 									</div>
 								</li>
 								<li>
@@ -361,9 +365,14 @@
 										<div class="accordion-icon"></div>
 									</div>
 									<div class="accordion-body">
-										<p>Icetea could be deployed both as public, permissionless blockchain and private, permissioned blockchain.</p>
-										<p>Based on the powerful Tendermint engine which was used in production stably for many private blockchains, Icetea adds support for smart contracts and utilities which are very useful for enterprise environment.</p>
-										<p>Icetea can also be deployed as a public blockchain under a DPOS layer. Currently, <a target="_blank" href='https://trada.tech/team.html'>Trada Tech</a> is developing a DPOS layer for an Icetea public-chain testnet.</p>
+										<p>Icetea could be deployed both as public, permissionless blockchain and private, permissioned
+											blockchain.</p>
+										<p>Based on the powerful Tendermint engine which was used in production stably for many private
+											blockchains, Icetea adds support for smart contracts and utilities which are very useful for
+											enterprise environment.</p>
+										<p>Icetea can also be deployed as a public blockchain under a DPOS layer. Currently, <a
+												target="_blank" href='https://trada.tech/team.html'>Trada Tech</a> is developing a DPOS layer
+											for an Icetea public-chain testnet.</p>
 									</div>
 								</li>
 								<li>
@@ -403,8 +412,7 @@
 						action="https://tech.us20.list-manage.com/subscribe/post?u=91350701797519f3e0f11de5b&amp;id=8de73fafb9"
 						method="post">
 						<div class="control control-expanded">
-							<input class="input" type="email" name="EMAIL" id="mce-EMAIL"
-								placeholder="Your email&hellip;" required>
+							<input class="input" type="email" name="EMAIL" id="mce-EMAIL" placeholder="Your email&hellip;" required>
 						</div>
 						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
@@ -427,14 +435,29 @@
 	<footer class="site-footer">
 		<div class="container">
 			<div class="site-footer-inner has-top-divider">
-				<div class="footer-copyright">&copy; 2019 &nbsp;<a href='https://trada.tech/team.html'
-						target='_blank'>Trada Tech</a>
+				<div class="footer-copyright">&copy; 2019 &nbsp;<a href='https://trada.tech/team.html' target='_blank'>Trada
+						Tech</a>
 				</div>
 			</div>
 	</footer>
 	</div>
 
 	<script src="dist/js/main.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		$(window).scroll(function () {
+			var scroll = $(window).scrollTop();
+			if (scroll > 50) {
+				$("#site-header").addClass("sticky");
+			} else {
+				$("#site-header").removeClass("sticky");
+			}
+		});
+		// expand menu
+		$('.btn-expand').click(function () {
+			$('.navbar').slideToggle(300)
+		})
+	</script>
 </body>
 
 </html>
