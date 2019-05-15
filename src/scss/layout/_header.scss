@@ -83,22 +83,25 @@
     width: 100%;
 	background: color(bg, 1);
 	box-shadow: 3px 1px 15px color(bsd, 1);
-    width: 100%;
-	padding: 15px;
+  width: 100%;
+	padding: 0;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 100;
 	transition: padding 300ms ease;
-	&.sticky {
-		padding: 10px;
-	}
 }
-
+.notice{
+	background: color(typography, 1);
+	color: color(bg, 1);
+	font-size: 16px;
+	padding: 5px 0;
+}
 .top-header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 10px 0;
 	.logo-site{
 		svg{
 			width: 60px;
@@ -135,10 +138,6 @@
 		}
 	}
 	.site-header{
-		padding: 10px;
-		&.sticky {
-			padding: 10px;
-		}
 		.container{
 			padding: 0 10px;
 		}
