@@ -82,10 +82,9 @@
 .site-header {
     width: 100%;
 	background: color(bg, 1);
-	box-shadow: 3px 1px 15px color(bsd, 1);
-  width: 100%;
+	box-shadow: 1px 1px 2px color(bsd, 1);
+  	width: 100%;
 	padding: 0;
-	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 100;
@@ -96,6 +95,7 @@
 	color: color(bg, 1);
 	font-size: 16px;
 	padding: 5px 0;
+	text-align: center;
 }
 .top-header{
 	display: flex;
@@ -104,8 +104,8 @@
 	padding: 10px 0;
 	.logo-site{
 		svg{
-			width: 60px;
-			height: 60px;
+			width: 48px;
+			height: 48px;
 		}
 	}
 }
@@ -148,17 +148,17 @@
 		align-items: center;
 		.logo-mobile{
 			svg{
-				width: 50px;
-				height: 50px;
+				width: 40px;
+				height: 40px;
 			}
 		}
 	}
 	.btn-expand{
 		cursor: pointer;
 		float: right;
-		margin-top: 7px;
+		margin-top: 0;
 		img{
-			width: 43px;
+			width: 32px;
 		}
 	}
 	.navbar{
@@ -172,6 +172,18 @@
 				padding: 7px 0;
 				border-top: 1px solid #eeeeee;
 			}
+		}
+	}
+	.hero {
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.features {
+		.features-wrap {
+			margin-right: -32px;
+			margin-left: -32px;
 		}
 	}
 }
