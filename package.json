@@ -49,5 +49,9 @@
     "uglify-es": "^3.3.10"
   },
   "homepage": "https://github.com/TradaTech/icetea.io#readme",
-  "main": ".eslintrc.js"
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "plyr": "^3.5.4",
+    "videojs-youtube": "^2.6.0"
+  }
 }
