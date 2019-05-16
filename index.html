@@ -427,14 +427,15 @@
 				var thumbnail = "./src/images/icetea.png";
 				var image = new Image();
 				image.src = thumbnail;
-				image.addEventListener("load", function () {
+				//image.addEventListener("load", function () {
 					youtube[i].appendChild(image);
-				}(i));
+				//}(i));
 				youtube[i].addEventListener("click", function () {
 					var iframe = document.createElement("iframe");
 					iframe.setAttribute("frameborder", "0");
 					iframe.setAttribute("allowfullscreen", "");
-					iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+					iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")
+					iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1&modestbranding=1");
 					this.innerHTML = "";
 					this.appendChild(iframe);
 				});
