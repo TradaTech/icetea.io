@@ -1,53 +1,101 @@
 .is-boxed {
-    background: color(bg, 2);
+  background: color(bg, 2);
 }
 
 .body-wrap {
-    background: color(bg, 1);
-    overflow: hidden;
-    /* Sticky footer */
-    display: flex;
-    flex-direction: column;
-    padding-top: 32px;
+  background: color(bg, 1);
+  overflow: hidden;
+  /* Sticky footer */
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
 }
 
 .boxed-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    @include shadow;
+  max-width: 1440px;
+  margin: 0 auto;
+  @include shadow;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .section-inner {
-    position: relative; /* To always display inner elements above pseudo decorative stuff */
-    padding-top: 48px;
-    padding-bottom: 48px;
+  position: relative; /* To always display inner elements above pseudo decorative stuff */
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
-@include media( '>medium' ) {
-
-    .section-inner {
-        padding-top: 88px;
-        padding-bottom: 88px;
-    }
+@include media(">medium") {
+  .section-inner {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
 }
 
 .video-intro {
-    position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+    max-width: 85%;
+    margin: 0 auto;
 }
 
-.video-intro iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+.youtube {
+  background-color: #868686;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 18px -5px rgba(0, 0, 0, 0.69);
 }
 
+.youtube img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+}
 
+.youtube .play-button {
+  width: 95px;
+  height: 95px;
+  background-color: #f36;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.youtube .play-button:before {
+  content: "";
+  border-style: solid;
+  border-width: 15px 0 15px 26px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.youtube img,
+.youtube .play-button {
+  cursor: pointer;
+}
+
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+  position: absolute;
+}
+
+.youtube .play-button,
+.youtube .play-button:before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.youtube iframe {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
