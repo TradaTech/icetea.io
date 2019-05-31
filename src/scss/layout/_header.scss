@@ -94,8 +94,12 @@
 	background: color(typography, 1);
 	color: color(bg, 1);
 	font-size: 16px;
-	padding: 5px 0;
+	padding: 8px 0;
 	text-align: center;
+	a {
+		color: white;
+		text-decoration: underline;
+	}
 }
 .top-header{
 	display: flex;
