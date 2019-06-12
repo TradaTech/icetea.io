@@ -71,7 +71,7 @@
 				<nav class="navbar">
 					<ul>
 						<li><a href="/">Home</a></li>
-						<li><a target="blank" href="https://kitchensink.icetea.io/">Kitchen Sink</a></li>
+						<li><a onclick="window.open('testnet.html','_blank')">Testnet</a></li>
 						<li><a target="blank" href="https://studio.icetea.io/">Icetea Studio</a></li>
 					</ul>
 				</nav>
@@ -428,7 +428,7 @@
 				var image = new Image();
 				image.src = thumbnail;
 				//image.addEventListener("load", function () {
-					youtube[i].appendChild(image);
+				youtube[i].appendChild(image);
 				//}(i));
 				youtube[i].addEventListener("click", function () {
 					var iframe = document.createElement("iframe");
