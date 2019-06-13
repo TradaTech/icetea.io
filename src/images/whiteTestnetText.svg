@@ -1,0 +1,12 @@
+<svg width="250.00000000000003" height="90" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="92" width="252" y="-1" x="-1"/>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(27.944747924804688,0,0,2.4139535427093506,-3260.314498901367,-19.773256573826075) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_7" y="35.921875" x="124" stroke-width="0" fill="#000000"/>
+  <text font-style="normal" font-weight="normal" stroke="#000" transform="matrix(2.2921281133313727,0,0,2.222222328186035,-163.80928662303387,-24.34896044433117) " xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="30" id="svg_8" y="41.959374" x="83.236929" stroke-opacity="null" stroke-width="0" fill="#ffffff">icetea</text>
+ </g>
+</svg>
