@@ -65,7 +65,7 @@
 	}
 }
 .tn-items {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	// box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.23);
 	margin: 0 45px 50px 45px;
 	padding: 30px;
@@ -87,7 +87,8 @@
 		align-items: flex-start;
 		margin-bottom: 10px;
 		padding-bottom: 10px;
-		border-bottom: 1px solid #4d576d;
+		// border-bottom: 1px solid #4d576d;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	}
 	.icon {
 		width: 45px;
