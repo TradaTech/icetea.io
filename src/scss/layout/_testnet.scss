@@ -21,7 +21,7 @@
 }
 .site-header-cus {
 	box-shadow: none;
-	font-size: 16px;
+	font-size: 12px;
 	background-color: rgba(0, 0, 0, 0);
 }
 .navbar-cus {
@@ -33,8 +33,8 @@
 				transition: color 0.5s;
 			}
 			a:hover {
-				color: #00faff;
-				text-decoration-color: #00faff;
+				color: #38b1c2;
+				text-decoration-color: #38b1c2;
 			}
 		}
 	}
@@ -174,4 +174,114 @@
 			}
 		}
 	}
+}
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10000;
+}
+.loader-section {
+	position: fixed;
+	height: 51%;
+	width: 100%;
+	left: 0;
+	transition: all 0.7s ease;
+	background: #030307;
+}
+.ui-body .loader-section {
+	background: #0b3d7b;
+}
+.ui-body .loading {
+	color: #ffffff;
+}
+.loader-top {
+	top: 0;
+}
+.loaded .loader-top {
+	transform: translate(0, -100%);
+}
+.loader-bottom {
+	bottom: 0;
+}
+.loaded .loader-bottom {
+	transform: translate(0, 100%);
+}
+@keyframes playbutton {
+	0% {
+		transform: scale(0.75);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(1.3);
+		opacity: 0;
+	}
+}
+#loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 10px;
+	height: 10px;
+	margin: -10px 0 0 -10px;
+	border-radius: 50%;
+	background: #fff;
+	animation: 5s ease 0s normal none infinite running playbutton;
+	z-index: 1001;
+}
+
+#loader:before {
+	position: absolute;
+	content: "";
+	height: calc(100% + 50px);
+	width: calc(100% + 50px);
+	top: -25px;
+	left: -25px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	animation: 1s ease 0s normal none infinite running playbutton;
+}
+
+#loader:after {
+	position: absolute;
+	content: "";
+	height: calc(100% + 26px);
+	width: calc(100% + 26px);
+	top: -13px;
+	left: -13px;
+	border-radius: 50%;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	animation: 2s ease 0s normal none infinite running playbutton;
+}
+@-webkit-keyframes flash {
+	50%,from,to {
+		opacity: 1;
+	}
+	25%,75% {
+		opacity: 0;
+	}
+}
+
+@keyframes flash {
+	50%,from,to {
+		opacity: 1;
+	}
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+.loading {
+	position: absolute;
+	bottom: 30px;
+	z-index: 2000;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	-webkit-animation: flash 3s linear infinite;
+	animation: flash 3s linear infinite;
 }
