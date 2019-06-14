@@ -6,7 +6,12 @@
 }
 .tn-container {
 	// background: #38b1c2;
-	background: linear-gradient(to right,#02132f 0%,#0b3d7b 50%,#02132f 100%);
+	background: linear-gradient(
+		to right,
+		#02132f 0%,
+		#0b3d7b 50%,
+		#02132f 100%
+	);
 	// background: rgba(0, 0, 0, 0);
 	color: #ffffff;
 }
@@ -62,8 +67,13 @@
 		margin-right: 0;
 	}
 	&:hover {
-		// transform: scale(1.01);
 		border: 1px solid rgb(21, 181, 221);
+		background: linear-gradient(
+			to top,
+			rgba(22, 137, 241, 0.7) 0%,
+			#0b3d7b 70%,
+			rgba(22, 137, 241, 0) 100%
+		);
 	}
 	.item_header {
 		display: flex;
