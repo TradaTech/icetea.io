@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Icetea Blockchain(Testnet)</title>
+  <title>Icetea Blockchain (Testnet)</title>
   <meta name="description" content="Changes the way people perceive blockchain." />
   <meta property="og:url" content="https://icetea.io" />
   <meta property="og:title" content="Icetea Blockchain" />
@@ -38,9 +38,9 @@
           </div>
           <nav class="navbar navbar-cus">
             <ul>
-              <li><a target="blank" href="https://studio.icetea.io/">ICETEA STUDIO</a></li>
+              <li><a target="blank" href="https://studio.icetea.io/">DOCUMENTATION</a></li>
+              <li><a target="blank" href="https://studio.icetea.io/">STUDIO</a></li>
               <li><a target="blank" href="https://studio.icetea.io/">WALLET</a></li>
-              <li><a target="blank" href="https://studio.icetea.io/">DEVELOPER TOOLS</a></li>
               <li><a target="blank" href="https://studio.icetea.io/">EXPLORER</a></li>
             </ul>
           </nav>
@@ -54,12 +54,25 @@
         <div class="hero-inner">
           <div class="hero-copy">
             <h1 class="hero-title mt-0 tn-title">Icetea Blockchain (Testnet)</h1>
-            <p class="hero-paragraph">Build dapps users do not even notice they are 'blockchain'</p>
+            <p class="hero-paragraph">Build useful dapps users do not even notice they are 'blockchain'</p>
           </div>
         </div>
         <div class="tn-wrap">
           <div class="itemslist">
-            <div class="tn-items" onclick="window.open('https://studio.icetea.io/','Studio');">
+            <div class="tn-items" onclick="window.open('https://docs.icetea.io/','Studio');">
+              <div class="item_header">
+                <div class="icon">
+                  <!-- <img src="./src/images/logo.svg" alt='' /> -->
+                </div>
+                <div class="pri_info">
+                  <p class="name">Documentation</p>
+                </div>
+              </div>
+              <div class="description">
+                <p>Guides & Reference to get started with Icetea Blockchain.</p>
+              </div>
+            </div>
+            <div class="tn-items" onclick="window.open('https://studio.icetea.io/','Wallet');">
               <div class="item_header">
                 <div class="icon">
                   <!-- <img src="./src/images/logo.svg" alt='' /> -->
@@ -69,11 +82,10 @@
                 </div>
               </div>
               <div class="description">
-                <p>As easy and powerful assupported. Now you can focus
-                  solely on app logic. Let Icetea take care of all the blockchain stuff.</p>
+                <p>An Web IDE to develop and test dApps in JavaScript and Rust.</p>
               </div>
             </div>
-            <div class="tn-items" onclick="window.open('https://studio.icetea.io/','Wallet');">
+            <div class="tn-items" onclick="window.open('https://wallet.icetea.io/','Developer');">
               <div class="item_header">
                 <div class="icon">
                   <!-- <img src="./src/images/logo.svg" alt='' /> -->
@@ -83,25 +95,10 @@
                 </div>
               </div>
               <div class="description">
-                <p>As easy and powerful as a regular app, with built-in WebAssembly supported. Now you can focus
-                  solely on app logic. Let Icetea take care of all the blockchain stuff.</p>
+                <p>Manage accounts, chat with decantralized bots, and the like.</p>
               </div>
             </div>
-            <div class="tn-items" onclick="window.open('https://studio.icetea.io/','Developer');">
-              <div class="item_header">
-                <div class="icon">
-                  <!-- <img src="./src/images/logo.svg" alt='' /> -->
-                </div>
-                <div class="pri_info">
-                  <p class="name">Icetea Developer Tools</p>
-                </div>
-              </div>
-              <div class="description">
-                <p>As easy and powerfulNow you can focus
-                  solely on app logic. Let Icetea take care of all the blockchain stuff.</p>
-              </div>
-            </div>
-            <div class="tn-items" onclick="window.open('https://studio.icetea.io/','Explorer');">
+            <div class="tn-items" onclick="window.open('https://scan.icetea.io/','Explorer');">
               <div class="item_header">
                 <div class="icon">
                   <!-- <img src="./src/images/logo.svg" alt='' /> -->
@@ -111,9 +108,7 @@
                 </div>
               </div>
               <div class="description">
-                <p>As easy and powerful as a regular NodeJS app, with built-in WebAssembly supported. Now you can
-                  focus
-                  solely on app logic. Let Icetea take care of all the blockchain stuff.</p>
+                <p>Dig into Icetea Blockchain blocks, transactions, and state.</p>
               </div>
             </div>
           </div>
@@ -145,7 +140,7 @@
       var $preload = $("#preloader");
       var $loader = $("#loader");
       if ($preload.length > 0) {
-        console.log("load");
+        // console.log("load");
         $win.on("load", function () {
           $loader.fadeOut(300);
           $body_m.addClass("loaded");
