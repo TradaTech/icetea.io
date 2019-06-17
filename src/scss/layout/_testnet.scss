@@ -129,17 +129,18 @@ main > .tn-container {
 }
 .sosial {
 	text-align: center;
+	&:hover {
+		img {
+			background: #38b1c2;
+		}
+	}
 	img {
 		transition: all 0.6s ease;
 		display: inline-flex;
-		margin-left: 5px;
 		padding: 2px;
 		width: 28px;
 		height: 28px;
 		border-radius: 50%;
-		&:hover {
-			background: #38b1c2;
-		}
 	}
 }
 // mobile
