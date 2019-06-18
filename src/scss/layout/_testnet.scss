@@ -123,15 +123,19 @@ main > .tn-container {
 
 .footer-cc {
 	flex: none;
+	/*
 	width: 33%;
 	font-size: 11px;
+	*/
 	line-height: normal;
 }
 .sosial {
 	text-align: center;
-	&:hover {
-		img {
-			background: #38b1c2;
+	a {
+		&:hover {
+			img {
+				background: #38b1c2;
+			}
 		}
 	}
 	img {
