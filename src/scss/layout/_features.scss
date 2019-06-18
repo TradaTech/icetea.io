@@ -11,6 +11,9 @@
 		background: color(bg, 2);
 		background: linear-gradient(to bottom, color(bg, 2), rgba(color(bg, 2), 0));
 	}
+	a {
+		text-decoration-color: #15b5dd
+	}
 }
 
 .features-wrap {

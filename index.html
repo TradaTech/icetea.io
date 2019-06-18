@@ -21,7 +21,7 @@
 <body class="is-boxed has-animations">
 	<header class="site-header" id="site-header">
 		<div class="notice">
-			<div class="container">Testnet is now available for early developers <a href="#mc_embed_signup">REGISTER</a></div>
+			<div class="container">Testnet is now public! <a href="/testnet.html">CHECK IT OUT</a></div>
 		</div>
 		<div class="container">
 			<div class="top-header">
@@ -66,13 +66,13 @@
 							</svg>
 						</a>
 					</div>
-					<div class="btn-expand hidden-md"><img src="./src/images/bar-button.png" alt=""></div>
+					<div class="btn-expand hidden-md"><img src="./src/images/bar-button.svg" alt=""></div>
 				</div>
 				<nav class="navbar">
 					<ul>
 						<li><a href="/">Home</a></li>
-						<li><a target="blank" href="https://kitchensink.icetea.io/">Kitchen Sink</a></li>
-						<li><a target="blank" href="https://studio.icetea.io/">Icetea Studio</a></li>
+						<li><a target="_blank" href="https://docs.icetea.io/">Documentation</a></li>
+						<li><a target="_blank" href="/testnet.html">Testnet</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -85,7 +85,7 @@
 					<div class="hero-inner">
 						<div class="hero-copy">
 							<h1 class="hero-title mt-0">Icetea Blockchain</h1>
-							<p class="hero-paragraph">Build dapps users do not even notice they are 'blockchain'</p>
+							<p class="hero-paragraph">Build useful dapps users do not even notice they are 'blockchain'</p>
 						</div>
 					</div>
 					<div class="video-intro">
@@ -428,7 +428,7 @@
 				var image = new Image();
 				image.src = thumbnail;
 				//image.addEventListener("load", function () {
-					youtube[i].appendChild(image);
+				youtube[i].appendChild(image);
 				//}(i));
 				youtube[i].addEventListener("click", function () {
 					var iframe = document.createElement("iframe");
