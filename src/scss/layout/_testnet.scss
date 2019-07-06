@@ -295,6 +295,7 @@ main > .tn-container {
 	-webkit-animation: flash 3s linear infinite;
 	animation: flash 3s linear infinite;
 }
+//navbar-toggle 
 .navbar-toggle * {
 	-ms-transition: all 0.4s ease;
 	-webkit-transition: all 0.4s ease;
@@ -316,6 +317,7 @@ main > .tn-container {
 	height: 2px;
 	margin-bottom: 3px;
 	background-color: #999;
+	// background-color: #fff;
 	display: block;
 }
 .navbar-toggle span.bar1 {
@@ -360,5 +362,6 @@ main > .tn-container {
 
 .navbar-toggle {
 	float: right;
-	margin-top: 15px;
+	margin: auto 5px;
+	height: 100%;
 }
