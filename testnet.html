@@ -34,7 +34,12 @@
                 <img src="./src/images/testnetLogo.svg" alt="">
               </a>
             </div>
-            <div class="btn-expand hidden-md"><img src="./src/images/bar-button.svg" alt=""></div>
+            <!-- <div class="btn-expand hidden-md"><img src="./src/images/bar-button.svg" alt=""></div> -->
+            <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+              <span class="bar3"></span>
+            </div>
           </div>
           <nav class="navbar navbar-cus">
             <ul>
@@ -99,18 +104,19 @@
                 <p>Manage accounts, chat with decantralized bots, and the like.</p>
               </div>
             </div>
-            <div class="tn-items" onclick="window.open('https://devtools.icetea.io/','DevTools');">
+            <div class="tn-items" onclick="window.open('https://scan.icetea.io/','Scan');">
               <div class="item_header">
                 <div class="icon">
                   <img src="./src/images/icetea-explorer.svg" alt='' />
                 </div>
                 <div class="pri_info">
-                  <p class="name">Icetea DevTools</p>
+                  <!-- <p class="name">Icetea DevTools</p> -->
+                  <p class="name">Icetea Scan</p>
                 </div>
               </div>
               <div class="description">
-                <!--<p>Dig into Icetea Blockchain blocks, transactions, and state.</p>-->
-                <p>A web tool for developers to work with blocks, transactions, contracts, accounts.</p>
+                <p>An explorer for Icetea blockchain blocks, transactions, contracts, accounts.</p>
+                <!-- <p>A web tool for developers to work with blocks, transactions, contracts, accounts.</p> -->
               </div>
             </div>
           </div>
@@ -171,8 +177,16 @@
       }
     })()
     // expand menu
-    $('.btn-expand').click(function () {
+    // $('.btn-expand').click(function () {
+    //   $('.navbar').slideToggle(300)
+    // })
+    $('.navbar-toggle').click(function () {
       $('.navbar').slideToggle(300)
+      if ($(this).hasClass('collapsed')) {
+        $(this).removeClass('collapsed');
+      } else {
+        $(this).addClass('collapsed');
+      }
     })
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
