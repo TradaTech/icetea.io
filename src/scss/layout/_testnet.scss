@@ -159,6 +159,10 @@ main > .tn-container {
 				float: none;
 				padding: 7px 0;
 				border-top: 1px solid #5a667c;
+				a {
+					display: inline-block;
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -295,7 +299,7 @@ main > .tn-container {
 	-webkit-animation: flash 3s linear infinite;
 	animation: flash 3s linear infinite;
 }
-//navbar-toggle 
+//navbar-toggle
 .navbar-toggle * {
 	-ms-transition: all 0.4s ease;
 	-webkit-transition: all 0.4s ease;
